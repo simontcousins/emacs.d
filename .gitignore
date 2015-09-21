@@ -21,3 +21,6 @@ session*
 .cask
 tramp
 /var/pcache
+abbrev_defs
+ac-comphist.dat
+smex-items
