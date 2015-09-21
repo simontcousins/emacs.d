@@ -12,6 +12,8 @@
    ido-vertical-mode
    idris-mode))
 
+(global-set-key (kbd "M-3") '(lambda()(interactive)(insert-string "#")))
+
 ;; Set Windows-specific preferences if running in a Windows environment.
 (defun udf-windows-setup ()
   (interactive)
