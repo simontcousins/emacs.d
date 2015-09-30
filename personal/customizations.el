@@ -8,6 +8,7 @@
 (prelude-require-packages
  '(ace-jump-zap
    ace-window
+   elm-mode
    fsharp-mode
    ido-vertical-mode
    idris-mode))
@@ -74,6 +75,11 @@
           (lambda ()
             (define-key fsharp-mode-map (kbd "M-RET") 'fsharp-eval-region)
             (define-key fsharp-mode-map (kbd "C-.") 'fsharp-ac/complete-at-point)))
+
+;; elm
+
+(add-hook 'elm-mode-hook #'elm-oracle-setup-completion)
+
 
 (provide 'customizations)
 ;;; customizations.el ends here
