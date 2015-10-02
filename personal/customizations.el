@@ -74,7 +74,8 @@
 (add-hook 'fsharp-mode-hook
           (lambda ()
             (define-key fsharp-mode-map (kbd "M-RET") 'fsharp-eval-region)
-            (define-key fsharp-mode-map (kbd "C-.") 'fsharp-ac/complete-at-point)))
+            (define-key fsharp-mode-map (kbd "C-.") 'fsharp-ac/complete-at-point)
+            (electric-indent-mode -1)))
 
 ;; elm
 
