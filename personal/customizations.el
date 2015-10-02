@@ -71,6 +71,8 @@
 
 ;; fsharp
 
+(setq fsharp-indent-offset 4)
+
 (add-hook 'fsharp-mode-hook
           (lambda ()
             (define-key fsharp-mode-map (kbd "M-RET") 'fsharp-eval-region)
