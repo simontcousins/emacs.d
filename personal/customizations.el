@@ -3,7 +3,11 @@
 ;;; Commentary:
 ; Put customisations to the prelude here.
 
-(server-start)
+(if (eq system-type 'windows-nt)
+    (progn
+      (server-start)
+      (set-face-attribute 'default nil
+                    :family "Consolas" :height 120)))
 
 ;;; Code:
 
