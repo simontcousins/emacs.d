@@ -1,0 +1,4 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\Shell\Open In Emacs\Command]
+@="\"C:\\msys64\\mingw64\\bin\\emacsclientw.exe\" -a \"C:\\msys64\\mingw64\\bin\\runemacs.exe\" \"%1\""

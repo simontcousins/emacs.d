@@ -3,6 +3,8 @@
 ;;; Commentary:
 ; Put customisations to the prelude here.
 
+(server-start)
+
 ;;; Code:
 
 (prelude-require-packages
