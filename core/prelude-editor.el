@@ -202,6 +202,9 @@ The body of the advice is in BODY."
      (list (line-beginning-position)
            (line-beginning-position 2)))))
 
+;; FIX
+(setq tramp-ssh-controlmaster-options)
+
 ;; tramp, for sudo access
 (require 'tramp)
 ;; keep in mind known issues with zsh - see emacs wiki
