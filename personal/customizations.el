@@ -7,7 +7,7 @@
     (progn
       (server-start)
       (set-face-attribute 'default nil
-                    :family "Consolas" :height 120)))
+                    :family "Consolas" :height 100)))
 
 ;;; Code:
 
@@ -19,7 +19,8 @@
    elm-mode
    fsharp-mode
    ido-vertical-mode
-   idris-mode))
+   idris-mode
+   lush-theme))
 
 (global-set-key (kbd "M-3") '(lambda()(interactive)(insert-string "#")))
 (global-hl-line-mode -1)
