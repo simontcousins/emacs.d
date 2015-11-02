@@ -14,12 +14,19 @@
 (prelude-require-packages
  '(ace-jump-zap
    ace-window
+   cursor-chg
+   cyberpunk-theme
    elm-mode
    fsharp-mode
    ido-vertical-mode
    idris-mode))
 
 (global-set-key (kbd "M-3") '(lambda()(interactive)(insert-string "#")))
+(global-hl-line-mode -1)
+
+(require 'cursor-chg)
+(toggle-cursor-type-when-idle 1)
+(change-cursor-mode 1)
 
 ;; Set Windows-specific preferences if running in a Windows environment.
 (defun udf-windows-setup ()
@@ -38,6 +45,8 @@
 
 (if (eq system-type 'windows-nt)
     (udf-windows-setup))
+
+(menu-bar-mode -1)
 
 ;; ido
 
