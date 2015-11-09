@@ -14,6 +14,7 @@
 (prelude-require-packages
  '(ace-jump-zap
    ace-window
+   csharp-mode
    cursor-chg
    cyberpunk-theme
    elm-mode
