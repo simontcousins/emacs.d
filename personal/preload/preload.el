@@ -8,5 +8,7 @@
       (setq find-program "C:\\msys64\\usr\\bin\\find.exe"
             grep-program "C:\\msys64\\usr\\bin\\grep.exe")))
 
-(setq prelude-theme 'lush)
+(setq font-lock-maximum-decoration 1)
+(setq prelude-theme 'dichromacy)
+;(setq prelude-theme 'quasi-monochrome)
 (global-hl-line-mode -1)

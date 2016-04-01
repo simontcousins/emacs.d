@@ -16,13 +16,15 @@
    ace-window
    csharp-mode
    cursor-chg
+   crux
    cyberpunk-theme
    elm-mode
    fsharp-mode
    ggtags
    ido-vertical-mode
    idris-mode
-   lush-theme))
+   lush-theme
+   quasi-monochrome-theme))
 
 (global-set-key (kbd "M-3") '(lambda()(interactive)(insert-string "#")))
 (global-hl-line-mode -1)
@@ -120,6 +122,16 @@
 (define-key ggtags-mode-map (kbd "M-,") 'pop-tag-mark)
 
 (setq-local imenu-create-index-function #'ggtags-build-imenu-index)
+
+;; crux
+
+(require 'crux)
+(global-set-key [remap move-beginning-of-line] #'crux-move-beginning-of-line)
+(global-set-key (kbd "C-c o") #'crux-open-with)
+(global-set-key [(shift return)] #'crux-smart-open-line)
+(global-set-key (kbd "s-r") #'crux-recentf-ido-find-file)
+(global-set-key (kbd "C-<backspace>") #'crux-kill-like-backwards)
+(global-set-key [remap kill-whole-line] #'crux-kill-whole-line)
 
 (provide 'customizations)
 ;;; customizations.el ends here
