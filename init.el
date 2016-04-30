@@ -32,6 +32,11 @@
 ;; Boston, MA 02110-1301, USA.
 
 ;;; Code:
+
+;; stop ad-handle-definition warning???
+(setq tramp-ssh-controlmaster-options
+      "-o ControlMaster=auto -o ControlPath='tramp.%%C' -o ControlPersist=no")
+
 (defvar current-user
       (getenv
        (if (equal system-type 'windows-nt) "USERNAME" "USER")))
