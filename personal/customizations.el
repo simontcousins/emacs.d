@@ -14,6 +14,7 @@
 (prelude-require-packages
  '(ace-jump-zap
    ace-window
+   color-theme-sanityinc-tomorrow
    csharp-mode
    cursor-chg
    crux
@@ -24,7 +25,8 @@
    ido-vertical-mode
    idris-mode
    lush-theme
-   quasi-monochrome-theme))
+   quasi-monochrome-theme
+   ujelly-theme))
 
 (global-set-key (kbd "M-3") '(lambda()(interactive)(insert-string "#")))
 (global-hl-line-mode -1)
