@@ -205,7 +205,7 @@ The body of the advice is in BODY."
            (line-beginning-position 2)))))
 
 ;; FIX
-(setq tramp-ssh-controlmaster-options)
+;(setq tramp-ssh-controlmaster-options)
 
 ;; tramp, for sudo access
 (require 'tramp)

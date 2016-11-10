@@ -25,6 +25,7 @@
    ido-vertical-mode
    idris-mode
    lush-theme
+   multiple-cursors
    quasi-monochrome-theme
    ujelly-theme))
 
