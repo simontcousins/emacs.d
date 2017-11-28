@@ -24,3 +24,6 @@ abbrev_defs
 ac-comphist.dat
 smex-items
 server/
+.emacs.desktop
+.emacs.desktop.lock
+network-security.data
