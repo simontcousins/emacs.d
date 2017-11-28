@@ -14,12 +14,14 @@
 (prelude-require-packages
  '(ace-jump-zap
    ace-window
+   cargo
    color-theme-sanityinc-tomorrow
    csharp-mode
    cursor-chg
    crux
    cyberpunk-theme
    elm-mode
+   flycheck-rust
    fsharp-mode
    ;function-args
    ggtags
@@ -29,6 +31,7 @@
    lush-theme
    multiple-cursors
    quasi-monochrome-theme
+   rust-mode
    ujelly-theme))
 
 (global-set-key (kbd "M-3") '(lambda()(interactive)(insert-string "#")))
@@ -57,6 +60,24 @@
     (udf-windows-setup))
 
 (menu-bar-mode -1)
+
+;; ace-jump-mode
+
+(autoload
+   'ace-jump-mode
+   "ace-jump-mode"
+   "Emacs quick move minor mode"
+   t)
+(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+;; enable a more powerful jump back function from ace jump mode
+(autoload
+   'ace-jump-mode-pop-mark
+   "ace-jump-mode"
+   "Ace jump back:-)"
+   t)
+(eval-after-load "ace-jump-mode"
+   '(ace-jump-mode-enable-mark-sync))
+(define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
 
 ;; ido
 
